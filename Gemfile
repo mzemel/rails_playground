@@ -12,6 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'disc'
 gem 'ohm'
 gem 'disque'
+gem 'mail'
 
 group :development, :test do
   gem 'byebug'

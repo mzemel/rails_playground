@@ -180,6 +180,7 @@ DEPENDENCIES
   disc
   disque
   jquery-rails
+  mail
   ohm
   puma
   rails (= 4.2.3)
