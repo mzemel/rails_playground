@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+require 'disque'
+
+client = Disque.new("127.0.0.1:7711")
+
+missed_messages = client.fetch(from: ["urgent", "default"]) {|j| j }
+async_messages = client.fetch(from: ["async_queue"])
+sync_messages = client.fetch(from: ["sync_queue"])
+
+puts 
+"Default queue size: #{missed_messages.size}\
+Async queue size: #{async_messages.size}\
+Sync queue size: #{sync_messages.size}\
+Async messages:\
+  #{async_messages} # lets get messages here\
+  Async messages:\
+  #{async_messages}" # lets get messages here

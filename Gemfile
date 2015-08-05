@@ -13,6 +13,10 @@ gem 'disc'
 gem 'ohm'
 gem 'disque'
 gem 'mail'
+gem 'pry'
+gem 'mitosis', path: "/Users/mzemel/Sites/mitosis"
+gem "better_errors"
+gem "binding_of_caller"
 
 group :development, :test do
   gem 'byebug'
