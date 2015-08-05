@@ -68,7 +68,7 @@ GEM
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
     debug_inspector (0.0.2)
-    disc (0.0.19)
+    disc (0.0.21)
       clap (~> 1.0)
       disque (~> 0.0.6)
       msgpack (~> 0.6.1)
